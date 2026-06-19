@@ -23,15 +23,12 @@ function Login({ onLogin }) {
       : "login";
 
     const response = await axios.post(
-
-      `https://ro-membrane-software.onrender.com/${endpoint}`,
-
-      {
-        username,
-        password
-      }
-
-    );
+  `https://ro-membrane-software.onrender.com/${endpoint}`,
+  {
+    username,
+    password
+  }
+);
     
     if (isSignup) {
 
