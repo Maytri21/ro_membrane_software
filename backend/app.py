@@ -20,7 +20,7 @@ CORS(
 )
 
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
-    "postgresql://ro_user:enQxJXiUfYzLMERQiKeIn6GgIYqUpNOv@dpg-d8qdga5ckfvc73e3fcvg-a.oregon-postgres.render.com/ro_membrane",
+    "DATABASE_URL",
     "sqlite:///ro_system.db"
 )
 
