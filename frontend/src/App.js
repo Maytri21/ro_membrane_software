@@ -818,7 +818,7 @@ else {
 
     const response = await axios.get(
 
-      `http://127.0.0.1:5000/projects/${username}`
+      `https://ro-membrane-software.onrender.com/projects/${username}`
 
     );
 
@@ -1343,7 +1343,7 @@ const adjustedRecovery = Math.min(
   }
 
   const response = await axios.post(
-    "http://127.0.0.1:5000/predict",
+    "https://ro-membrane-software.onrender.com/predict",
     {
       recovery: Number(adjustedRecovery),
       temperature: Number(temperature),
@@ -1434,7 +1434,7 @@ alert("Backend Error");
 
     await axios.post(
 
-      "http://127.0.0.1:5000/save_project",
+      "https://ro-membrane-software.onrender.com/save_project",
 
       {
 
@@ -2003,7 +2003,7 @@ alternateRowStyles: {
 
     const response = await axios.get(
 
-      `http://127.0.0.1:5000/projects/${username}`
+      `https://ro-membrane-software.onrender.com/projects/${username}`
 
     );
 
@@ -2034,7 +2034,7 @@ const deleteProject = async (id) => {
   try {
 
     await axios.delete(
-      `http://127.0.0.1:5000/project/${id}`
+      `https://ro-membrane-software.onrender.com/project/${id}`
     );
 
     alert("Project Deleted");
