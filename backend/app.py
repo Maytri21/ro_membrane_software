@@ -4,6 +4,7 @@ from database import db
 from flask_bcrypt import Bcrypt
 from models import User, Project
 import json
+import os
 
 app = Flask(__name__)
 
@@ -18,8 +19,10 @@ CORS(
     }
 )
 
-app.config["SQLALCHEMY_DATABASE_URI"] = \
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
+    "DATABASE_URL",
     "sqlite:///ro_system.db"
+)
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
